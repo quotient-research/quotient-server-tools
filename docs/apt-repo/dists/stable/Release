@@ -1,0 +1,17 @@
+Origin: Quotient Server Tools
+Label: Quotient Server Tools Repository
+Suite: stable
+Codename: stable
+Architectures: amd64 all
+Components: main
+Description: Quotient server automation tools
+Date: Fri, 31 Oct 2025 16:00:06 UTC
+MD5Sum:
+91e23de0cc4970a381a29b958ed8e018  main/binary-amd64/Packages
+12071538ad2f2e227e024cd703b0a325  main/binary-amd64/Packages.gz
+SHA1:
+2d1c606c8a38c4b04801729021184a530904eecf  main/binary-amd64/Packages
+1eaefaa956ce599d09ed1d86b92106ff7911d4e0  main/binary-amd64/Packages.gz
+SHA256:
+eaa725870075c5b878aa8ac34e570c04a2e0f1bbef09be729f45abb3b6df1765  main/binary-amd64/Packages
+f4f0804c14bc490e16e5e61fd4eaff7d27eb479b11c4aeee04373c97410fe0ec  main/binary-amd64/Packages.gz

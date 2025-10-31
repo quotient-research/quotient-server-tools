@@ -11,8 +11,14 @@
 <body>
     <h1>Quotient Server Tools APT Repository</h1>
     <p>This is an APT repository for Quotient server automation tools.</p>
-    <p><strong>Repository is being set up. Please check back shortly.</strong></p>
-    <p>Bootstrap command:</p>
+    <h2>Setup Instructions</h2>
+    <p>Run the bootstrap script on your Ubuntu server:</p>
     <pre><code>curl -fsSL https://raw.githubusercontent.com/quotient-research/quotient-server-tools/main/hardware/package/bootstrap-repo.sh | sudo bash</code></pre>
+    <p>Or manually add the repository:</p>
+    <pre><code>curl -fsSL https://quotient-research.github.io/quotient-server-tools/apt-repo/repo.gpg | sudo gpg --dearmor -o /usr/share/keyrings/quotient.gpg
+echo "deb [signed-by=/usr/share/keyrings/quotient.gpg] https://quotient-research.github.io/quotient-server-tools/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/quotient.list
+sudo apt-get update
+sudo apt-get install quotient-server-tools</code></pre>
+    <p><strong>Repository:</strong> <a href="https://github.com/quotient-research/quotient-server-tools">quotient-research/quotient-server-tools</a></p>
 </body>
 </html>

@@ -5,13 +5,19 @@ Codename: stable
 Architectures: amd64 all
 Components: main
 Description: Quotient server automation tools
-Date: Fri, 31 Oct 2025 16:00:06 UTC
+Date: Fri, 31 Oct 2025 16:07:01 UTC
 MD5Sum:
 91e23de0cc4970a381a29b958ed8e018  main/binary-amd64/Packages
-12071538ad2f2e227e024cd703b0a325  main/binary-amd64/Packages.gz
+dd7af87b5a7684e83ad2068c04b95ed5  main/binary-amd64/Packages.gz
+91e23de0cc4970a381a29b958ed8e018  main/binary-all/Packages
+dd7af87b5a7684e83ad2068c04b95ed5  main/binary-all/Packages.gz
 SHA1:
 2d1c606c8a38c4b04801729021184a530904eecf  main/binary-amd64/Packages
-1eaefaa956ce599d09ed1d86b92106ff7911d4e0  main/binary-amd64/Packages.gz
+bce1baece0069ab9fa42ba6abe007959abc6b0b2  main/binary-amd64/Packages.gz
+2d1c606c8a38c4b04801729021184a530904eecf  main/binary-all/Packages
+bce1baece0069ab9fa42ba6abe007959abc6b0b2  main/binary-all/Packages.gz
 SHA256:
 eaa725870075c5b878aa8ac34e570c04a2e0f1bbef09be729f45abb3b6df1765  main/binary-amd64/Packages
-f4f0804c14bc490e16e5e61fd4eaff7d27eb479b11c4aeee04373c97410fe0ec  main/binary-amd64/Packages.gz
+de5e6f1d0e33ad6efd1ca50e0362a4c3ff30e5cb1a138b3be55e74b0b3c2a914  main/binary-amd64/Packages.gz
+eaa725870075c5b878aa8ac34e570c04a2e0f1bbef09be729f45abb3b6df1765  main/binary-all/Packages
+de5e6f1d0e33ad6efd1ca50e0362a4c3ff30e5cb1a138b3be55e74b0b3c2a914  main/binary-all/Packages.gz

@@ -1,0 +1,17 @@
+Package: quotient-server-tools
+Version: 1.0.0
+Architecture: all
+Maintainer: Quotient Team <quotient@example.com>
+Depends: bash, systemd, curl, jq
+Recommends: awscli, microk8s
+Filename: pool/main/q/quotient-server-tools/quotient-server-tools_1.0.0_amd64.deb
+Size: 1932
+MD5sum: 6e836ac176a81306abefe52bde4a17fd
+SHA1: 10ea71896d9abae039fd284330310d8a864a36e1
+SHA256: f575331062f66a60ce2c1033a8a5f6dbc95d1c42d0e662e54bce90f89ccb3775
+Section: admin
+Priority: optional
+Description: Quotient server automation tools and scripts
+ This package contains scripts and services for managing Quotient server
+ configuration, ECR authentication, MicroK8s certificates, and Bluetooth setup.
+

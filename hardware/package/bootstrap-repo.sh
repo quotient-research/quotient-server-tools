@@ -30,25 +30,42 @@ apt-get install -y -qq curl gpg apt-transport-https >/dev/null 2>&1 || true
 # Download and install GPG key
 echo "Downloading and installing GPG key..."
 GPG_KEY_EXISTS=false
-if curl -fsSL "$KEY_URL" | gpg --dearmor -o /usr/share/keyrings/quotient.gpg 2>/dev/null; then
-    chmod 644 /usr/share/keyrings/quotient.gpg
-    echo "✅ GPG key installed"
-    GPG_KEY_EXISTS=true
+if curl -fsSL "$KEY_URL" -o /tmp/quotient-repo.gpg 2>/dev/null; then
+    # Verify it's actually a GPG key
+    if gpg --show-keys /tmp/quotient-repo.gpg >/dev/null 2>&1; then
+        # Convert to binary format and install
+        cat /tmp/quotient-repo.gpg | gpg --dearmor > /usr/share/keyrings/quotient.gpg 2>/dev/null
+        chmod 644 /usr/share/keyrings/quotient.gpg
+        rm -f /tmp/quotient-repo.gpg
+        echo "✅ GPG key installed and verified"
+        GPG_KEY_EXISTS=true
+        
+        # Show key info for verification
+        KEY_INFO=$(gpg --show-keys /usr/share/keyrings/quotient.gpg 2>/dev/null | grep -A1 "^pub")
+        if [ -n "$KEY_INFO" ]; then
+            echo "   Key fingerprint:"
+            echo "$KEY_INFO" | grep -v "^pub" | head -1 | sed 's/^/   /'
+        fi
+    else
+        echo "⚠️  Downloaded file is not a valid GPG key"
+        rm -f /tmp/quotient-repo.gpg
+    fi
 else
-    echo "⚠️  GPG key not found, continuing without signature verification"
-    echo "   (Repository may be unsigned)"
-    # Continue anyway for unsigned repos
+    echo "⚠️  GPG key not found at $KEY_URL"
+    echo "   Repository will use trusted mode (less secure)"
 fi
 
 # Add repository to sources.list.d
 echo "Adding repository to APT sources..."
 if [ "$GPG_KEY_EXISTS" = true ]; then
-    # Use signed repository
+    # Use signed repository (recommended - verifies package authenticity)
     REPO_LINE="deb [signed-by=/usr/share/keyrings/quotient.gpg] ${REPO_URL} stable main"
+    echo "   Using GPG-signed repository (secure)"
 else
-    # Use unsigned repository with trusted flag
+    # Use unsigned repository with trusted flag (not recommended for production)
     REPO_LINE="deb [trusted=yes] ${REPO_URL} stable main"
-    echo "⚠️  Using unsigned repository (less secure but required)"
+    echo "⚠️  WARNING: Using unsigned repository (less secure)"
+    echo "   Packages will NOT be verified for authenticity"
 fi
 
 # Check if already added

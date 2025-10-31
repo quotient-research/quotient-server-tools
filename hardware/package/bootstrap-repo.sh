@@ -83,18 +83,44 @@ else
     echo "✅ Package lists updated"
 fi
 
+# Verify package is available before attempting installation
+echo "Checking package availability..."
+if apt-cache show quotient-server-tools >/dev/null 2>&1; then
+    echo "✅ Package found in repository"
+else
+    echo "❌ Package not found in APT cache"
+    echo ""
+    echo "Debugging information:"
+    echo "  Repository URL: ${REPO_URL}"
+    echo "  Checking repository structure..."
+    curl -sI "${REPO_URL}/dists/stable/Release" | head -3 || echo "  ⚠️  Cannot access Release file"
+    echo ""
+    echo "  Available packages from repository:"
+    apt-cache search --names-only . | grep -i quotient || echo "  No packages found matching 'quotient'"
+    echo ""
+    echo "  Direct package list check:"
+    curl -s "${REPO_URL}/dists/stable/main/binary-amd64/Packages" | grep "^Package:" | head -5 || echo "  Cannot read Packages file"
+    echo ""
+    echo "Troubleshooting:"
+    echo "  1. Verify repository is accessible: curl -I ${REPO_URL}/dists/stable/Release"
+    echo "  2. Check package exists: curl ${REPO_URL}/dists/stable/main/binary-amd64/Packages | grep -A10 'quotient-server-tools'"
+    echo "  3. Verify GitHub Pages is enabled: https://github.com/${GITHUB_ORG}/${REPO_NAME}/settings/pages"
+    echo "  4. Try manual update: sudo apt-get update -o Acquire::Check-Valid-Until=false"
+    exit 1
+fi
+
 # Install or upgrade quotient-server-tools
 echo "Installing quotient-server-tools..."
 INSTALL_OUTPUT=$(apt-get install -y quotient-server-tools 2>&1)
 INSTALL_EXIT=$?
 
-if [ $INSTALL_EXIT -ne 0 ] || echo "$INSTALL_OUTPUT" | grep -qi "Unable to locate\|Package.*not found\|E: Unable to locate"; then
-    echo "⚠️  Package installation failed"
-    echo "$INSTALL_OUTPUT" | grep -i "unable\|not found\|error" | head -3 || echo "$INSTALL_OUTPUT" | tail -5
+if [ $INSTALL_EXIT -ne 0 ]; then
+    echo "⚠️  Package installation failed (exit code: $INSTALL_EXIT)"
+    echo "$INSTALL_OUTPUT" | tail -10
     echo ""
     echo "Troubleshooting:"
-    echo "  - Verify package exists: curl ${REPO_URL}/dists/stable/main/binary-amd64/Packages | grep -A5 'quotient-server-tools'"
-    echo "  - Check repository structure is correct"
+    echo "  - Check full error output above"
+    echo "  - Verify package dependencies are available"
     exit 1
 else
     echo "✅ Quotient server tools installed/upgraded"

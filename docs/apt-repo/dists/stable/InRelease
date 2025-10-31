@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Origin: Quotient Server Tools
 Label: Quotient Server Tools Repository
 Suite: stable
@@ -21,3 +24,19 @@ SHA256:
  737dd92866e16130343adda09155ed4847b61bdc0d8aa284d0a30944a361d7f9 458 main/binary-all/Packages.gz
  de60cdb7ef0752ee2ab94decea7bff6238dd1fb18ed427301e8c4e73105eea94 676 main/binary-amd64/Packages
  737dd92866e16130343adda09155ed4847b61bdc0d8aa284d0a30944a361d7f9 458 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEElbIxTnIMDIG4GDug8xTPXSnYZ14FAmkE8qkACgkQ8xTPXSnY
+Z17fXhAAlkPKlnRm0NcETam76HZsx0vI/RKzF+SDrJsZqXH100wHt1aIa9AXncWq
+5QliskCyKJ0JiA2/V9VMOtdeIe7ssrZfZnQ17DuBU/7/r0dlvukuhIEFyoXCQNMY
+OowCPdRqbTkNMwyRIPx0TFXzAmP8TL3mtDRBsefbU0dBzDPyJQzxl/gAoYotcwsD
+J44YE8UNYwP2jx9tw5A8AOMd/Oy82QGWGuZjkcIJiVxk4UL4V7kthwrh2yoB4gdo
+9dWNYYxYPRDWrPYY070icqFIg8leqvFfxFjQC9G4uPUvbKDsknnunkExYjgZ/eQs
+GpzRozEoyhSTFjFwM2uFsFPNuDeDX6bsyQBXgOZuFokJALo86E/AzHeHPQIsc2MU
+9LqkPFS/XvieiYlJh4Bq7tR1uhpa7Lqtn+kErEZSSL9PhXdJ7hsPX/vsDXyuNBU5
+GSL8iWHgBybQOTJDLO2vQgTodTFRh5B37ZkSIQh7EI4ixQrGtCj+9s+K/DSIGasK
+jzqN/4drV1aEj8Lcn0pHIf3ygnLa7Sbyy0TtL7RISpmByhtLX5AsdeN9KTR/sh2z
+HoPWSLucj26OEpJi375C1ccQjnsQ3ssJhXwKfgqo0Ou4XOCt2qEsXEw3VnWsKq+0
+AcR4WI/7uzutvrd6EV0Ajc7drXl+rX4hgZYpUQtxCXZ3SlNrobk=
+=9LJk
+-----END PGP SIGNATURE-----

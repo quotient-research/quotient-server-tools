@@ -1,14 +1,14 @@
 Package: quotient-server-tools
-Version: 1.22.0
+Version: 1.23.0
 Architecture: all
 Maintainer: Quotient Team <quotient@example.com>
 Depends: bash, systemd, curl, jq
 Recommends: awscli, microk8s
-Filename: pool/main/q/quotient-server-tools/quotient-server-tools_1.22.0_amd64.deb
-Size: 4394882
-MD5sum: 9e92605124a9258e546e38421ebdae17
-SHA1: 3e53908595899c87732ca194408e6b6f3497b8ca
-SHA256: b9a3e2b927b29b4daf2d608bd6022481480d094c598f2861d478a871e95aa610
+Filename: pool/main/q/quotient-server-tools/quotient-server-tools_1.23.0_amd64.deb
+Size: 4401066
+MD5sum: e31aa32915187e68d502440e40f197a4
+SHA1: 032252342fcf6a96a5357244a6ec1be63c1f86cd
+SHA256: 8a0e81e893643da05ad07be6ebbe2d153e3449ebaa9f4fa2a6945aa37d16cb3e
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

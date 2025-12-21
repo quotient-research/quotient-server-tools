@@ -5,19 +5,19 @@ Codename: stable
 Architectures: amd64 all
 Components: main
 Description: Quotient server automation tools
-Date: Sun, 16 Nov 2025 18:28:27 UTC
+Date: Sun, 21 Dec 2025 15:51:36 UTC
 MD5Sum:
- 06e980a13d0ae800beed0c35ff71b281 680 main/binary-all/Packages
- b3d385d76b0578ef5f481012bbeef302 460 main/binary-all/Packages.gz
- 06e980a13d0ae800beed0c35ff71b281 680 main/binary-amd64/Packages
- b3d385d76b0578ef5f481012bbeef302 460 main/binary-amd64/Packages.gz
+ 32fa847a01c2a0c41c45e13c8c9bcb91 680 main/binary-all/Packages
+ 5be9831f14c42ab98b6611815aca4e06 460 main/binary-all/Packages.gz
+ 32fa847a01c2a0c41c45e13c8c9bcb91 680 main/binary-amd64/Packages
+ 5be9831f14c42ab98b6611815aca4e06 460 main/binary-amd64/Packages.gz
 SHA1:
- 94cd2a6734600b5bb1653f1c3196d90774df8d64 680 main/binary-all/Packages
- ff7bf96c60f7435a391f80cf369cddd7677ce6ba 460 main/binary-all/Packages.gz
- 94cd2a6734600b5bb1653f1c3196d90774df8d64 680 main/binary-amd64/Packages
- ff7bf96c60f7435a391f80cf369cddd7677ce6ba 460 main/binary-amd64/Packages.gz
+ bac5715af6577b1a153a56211e880d64830439c7 680 main/binary-all/Packages
+ 0f665514fc9742e37ac8be57dc02d18fa1930f37 460 main/binary-all/Packages.gz
+ bac5715af6577b1a153a56211e880d64830439c7 680 main/binary-amd64/Packages
+ 0f665514fc9742e37ac8be57dc02d18fa1930f37 460 main/binary-amd64/Packages.gz
 SHA256:
- 37d6a89171c390b39387c10f228b5634bb31815cfff4236e0bece42ca38bfeda 680 main/binary-all/Packages
- 4e1d6c1108bc74a5f71a4cc6f5fa909ad79e97e5288fe73a9daeba5fc2e16892 460 main/binary-all/Packages.gz
- 37d6a89171c390b39387c10f228b5634bb31815cfff4236e0bece42ca38bfeda 680 main/binary-amd64/Packages
- 4e1d6c1108bc74a5f71a4cc6f5fa909ad79e97e5288fe73a9daeba5fc2e16892 460 main/binary-amd64/Packages.gz
+ aa140b53b5738f9695461f6f67cf5290de24fdcbd9e581132946cafb0dd937e2 680 main/binary-all/Packages
+ 854fbc1d90137bcec5aebdcde473a414ceb7f2303ab0c64e0fcc5a669fc9287f 460 main/binary-all/Packages.gz
+ aa140b53b5738f9695461f6f67cf5290de24fdcbd9e581132946cafb0dd937e2 680 main/binary-amd64/Packages
+ 854fbc1d90137bcec5aebdcde473a414ceb7f2303ab0c64e0fcc5a669fc9287f 460 main/binary-amd64/Packages.gz

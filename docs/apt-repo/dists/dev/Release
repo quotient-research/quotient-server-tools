@@ -1,0 +1,23 @@
+Origin: Quotient Server Tools
+Label: Quotient Server Tools Repository
+Suite: dev
+Codename: dev
+Architectures: amd64 all
+Components: main
+Description: Quotient server tools - development channel (bleeding edge)
+Date: Wed, 22 Apr 2026 03:09:49 UTC
+MD5Sum:
+ cd675c24bfc9995a3908742a2857ed75 685 main/binary-all/Packages
+ 719a9fdca5ee6f2404ecbf81758a05a4 468 main/binary-all/Packages.gz
+ cd675c24bfc9995a3908742a2857ed75 685 main/binary-amd64/Packages
+ 719a9fdca5ee6f2404ecbf81758a05a4 468 main/binary-amd64/Packages.gz
+SHA1:
+ b81cb6c1f7b43bbd9edfc87309b7fdd4bdf4bad4 685 main/binary-all/Packages
+ 2b52c075c7ef72037a578856870b4cf129707db1 468 main/binary-all/Packages.gz
+ b81cb6c1f7b43bbd9edfc87309b7fdd4bdf4bad4 685 main/binary-amd64/Packages
+ 2b52c075c7ef72037a578856870b4cf129707db1 468 main/binary-amd64/Packages.gz
+SHA256:
+ 52359bf2a6b8050f7e47d62ac3676654238d2f54df449007af0a1e30a526d796 685 main/binary-all/Packages
+ 27317cfefaa7b4948770766f9e7186ce376c9b8e3d3b945421a155f77c91949f 468 main/binary-all/Packages.gz
+ 52359bf2a6b8050f7e47d62ac3676654238d2f54df449007af0a1e30a526d796 685 main/binary-amd64/Packages
+ 27317cfefaa7b4948770766f9e7186ce376c9b8e3d3b945421a155f77c91949f 468 main/binary-amd64/Packages.gz

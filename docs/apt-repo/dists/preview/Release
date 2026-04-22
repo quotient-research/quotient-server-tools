@@ -1,0 +1,23 @@
+Origin: Quotient Server Tools
+Label: Quotient Server Tools Repository
+Suite: preview
+Codename: preview
+Architectures: amd64 all
+Components: main
+Description: Quotient server tools - preview channel (pre-release)
+Date: Wed, 22 Apr 2026 03:22:17 UTC
+MD5Sum:
+ 487cb23293fa3c26c8835f6fdd461b6d 689 main/binary-all/Packages
+ f3b8c446c6519e829881fd8a4930242e 471 main/binary-all/Packages.gz
+ 487cb23293fa3c26c8835f6fdd461b6d 689 main/binary-amd64/Packages
+ f3b8c446c6519e829881fd8a4930242e 471 main/binary-amd64/Packages.gz
+SHA1:
+ 630135f0ff62cd16f04012a9a2a6a24acb35cd3d 689 main/binary-all/Packages
+ 2d0d6e8c362e90801b13dd2d63b10f66ba8b2091 471 main/binary-all/Packages.gz
+ 630135f0ff62cd16f04012a9a2a6a24acb35cd3d 689 main/binary-amd64/Packages
+ 2d0d6e8c362e90801b13dd2d63b10f66ba8b2091 471 main/binary-amd64/Packages.gz
+SHA256:
+ b6da530b30d68d44adad3bdc1b0bec093c7a212959064ae0b0baf633d45cc46e 689 main/binary-all/Packages
+ 2958f115aa4306f19b900c8b6f75196ad8791840bfd81227573a1dc1f800b3ba 471 main/binary-all/Packages.gz
+ b6da530b30d68d44adad3bdc1b0bec093c7a212959064ae0b0baf633d45cc46e 689 main/binary-amd64/Packages
+ 2958f115aa4306f19b900c8b6f75196ad8791840bfd81227573a1dc1f800b3ba 471 main/binary-amd64/Packages.gz

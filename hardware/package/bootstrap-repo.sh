@@ -1,6 +1,12 @@
 #!/bin/bash
 # Bootstrap script to configure Ubuntu server to use Quotient APT repository
 # This script should be run once on each server that needs automatic updates
+#
+# Usage:
+#   curl -fsSL https://...bootstrap-repo.sh | sudo bash                    # stable (default)
+#   QUOTIENT_CHANNEL=dev curl -fsSL https://...bootstrap-repo.sh | sudo bash  # dev channel
+#
+# Supported channels: dev, preview, stable
 
 set -e
 
@@ -9,11 +15,24 @@ GITHUB_ORG="quotient-research"
 REPO_NAME="quotient-server-tools"
 BRANCH="main"
 
+# Channel selection: defaults to stable for production
+CHANNEL="${QUOTIENT_CHANNEL:-stable}"
+
+# Validate channel
+case "$CHANNEL" in
+    dev|preview|stable) ;;
+    *)
+        echo "❌ Invalid channel: $CHANNEL (must be dev, preview, or stable)"
+        exit 1
+        ;;
+esac
+
 REPO_URL="https://${GITHUB_ORG}.github.io/${REPO_NAME}/apt-repo"
 KEY_URL="${REPO_URL}/repo.gpg"
 
 echo "=== Setting up Quotient APT Repository ==="
 echo "Repository URL: $REPO_URL"
+echo "Channel: $CHANNEL"
 echo ""
 
 # Check if running as root
@@ -59,27 +78,22 @@ fi
 echo "Adding repository to APT sources..."
 if [ "$GPG_KEY_EXISTS" = true ]; then
     # Use signed repository (recommended - verifies package authenticity)
-    REPO_LINE="deb [signed-by=/usr/share/keyrings/quotient.gpg] ${REPO_URL} stable main"
+    REPO_LINE="deb [signed-by=/usr/share/keyrings/quotient.gpg] ${REPO_URL} ${CHANNEL} main"
     echo "   Using GPG-signed repository (secure)"
 else
     # Use unsigned repository with trusted flag (not recommended for production)
-    REPO_LINE="deb [trusted=yes] ${REPO_URL} stable main"
+    REPO_LINE="deb [trusted=yes] ${REPO_URL} ${CHANNEL} main"
     echo "⚠️  WARNING: Using unsigned repository (less secure)"
     echo "   Packages will NOT be verified for authenticity"
 fi
 
-# Check if already added
+# Check if already added (always update to ensure correct channel)
 if [ -f /etc/apt/sources.list.d/quotient.list ]; then
-    if grep -q "^deb.*${REPO_URL}.*stable main" /etc/apt/sources.list.d/quotient.list 2>/dev/null; then
-        # Update if different (e.g., switching from signed to unsigned or vice versa)
-        echo "$REPO_LINE" > /etc/apt/sources.list.d/quotient.list
-        echo "✅ Repository updated"
-    else
-        echo "✅ Repository already configured"
-    fi
+    echo "$REPO_LINE" > /etc/apt/sources.list.d/quotient.list
+    echo "✅ Repository updated (channel: ${CHANNEL})"
 else
     echo "$REPO_LINE" > /etc/apt/sources.list.d/quotient.list
-    echo "✅ Repository added"
+    echo "✅ Repository added (channel: ${CHANNEL})"
 fi
 
 # Update package lists
@@ -93,7 +107,7 @@ if [ $UPDATE_EXIT -ne 0 ] || echo "$UPDATE_OUTPUT" | grep -qi "Err:.*quotient\|4
     echo ""
     echo "Troubleshooting:"
     echo "  - Verify GitHub Pages is enabled at: https://github.com/${GITHUB_ORG}/${REPO_NAME}/settings/pages"
-    echo "  - Check repository is accessible: curl -I ${REPO_URL}/dists/stable/Release"
+    echo "  - Check repository is accessible: curl -I ${REPO_URL}/dists/${CHANNEL}/Release"
     echo "  - Repository URL: ${REPO_URL}"
     exit 1
 else
@@ -109,18 +123,19 @@ else
     echo ""
     echo "Debugging information:"
     echo "  Repository URL: ${REPO_URL}"
+    echo "  Channel: ${CHANNEL}"
     echo "  Checking repository structure..."
-    curl -sI "${REPO_URL}/dists/stable/Release" | head -3 || echo "  ⚠️  Cannot access Release file"
+    curl -sI "${REPO_URL}/dists/${CHANNEL}/Release" | head -3 || echo "  ⚠️  Cannot access Release file"
     echo ""
     echo "  Available packages from repository:"
     apt-cache search --names-only . | grep -i quotient || echo "  No packages found matching 'quotient'"
     echo ""
     echo "  Direct package list check:"
-    curl -s "${REPO_URL}/dists/stable/main/binary-amd64/Packages" | grep "^Package:" | head -5 || echo "  Cannot read Packages file"
+    curl -s "${REPO_URL}/dists/${CHANNEL}/main/binary-amd64/Packages" | grep "^Package:" | head -5 || echo "  Cannot read Packages file"
     echo ""
     echo "Troubleshooting:"
-    echo "  1. Verify repository is accessible: curl -I ${REPO_URL}/dists/stable/Release"
-    echo "  2. Check package exists: curl ${REPO_URL}/dists/stable/main/binary-amd64/Packages | grep -A10 'quotient-server-tools'"
+    echo "  1. Verify repository is accessible: curl -I ${REPO_URL}/dists/${CHANNEL}/Release"
+    echo "  2. Check package exists: curl ${REPO_URL}/dists/${CHANNEL}/main/binary-amd64/Packages | grep -A10 'quotient-server-tools'"
     echo "  3. Verify GitHub Pages is enabled: https://github.com/${GITHUB_ORG}/${REPO_NAME}/settings/pages"
     echo "  4. Try manual update: sudo apt-get update -o Acquire::Check-Valid-Until=false"
     exit 1
@@ -143,6 +158,11 @@ else
     echo "✅ Quotient server tools installed/upgraded"
 fi
 
+# Write channel file so quotient-configure.sh and apply-k8s-manifests.sh use the correct image tags
+mkdir -p /etc/quotient
+echo "$CHANNEL" > /etc/quotient/channel
+echo "✅ Release channel set to: ${CHANNEL}"
+
 # Verify auto-update timer is enabled
 if systemctl list-timers | grep -q "quotient-auto-update.timer"; then
     echo "✅ Auto-update timer is enabled"
@@ -155,9 +175,11 @@ echo ""
 echo "=== Setup Complete ==="
 echo ""
 echo "Your server is now configured to:"
-echo "  - Pull packages from: $REPO_URL"
+echo "  - Pull packages from: $REPO_URL (channel: ${CHANNEL})"
 echo "  - Auto-update hourly (9 AM - 10 PM ET) via systemd timer"
+echo "  - Deploy container images with tag: ${CHANNEL}"
 echo ""
 echo "To manually update: sudo apt-get update && sudo apt-get install -y quotient-server-tools"
 echo "To check update status: systemctl status quotient-auto-update.timer"
+echo "To change channel: edit /etc/quotient/channel and run: sudo apt-get update && sudo apt-get install -y quotient-server-tools"
 

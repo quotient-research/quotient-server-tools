@@ -1,5 +1,5 @@
 Package: quotient-server-tools
-Version: 1.92
+Version: 1.93
 Architecture: all
 Maintainer: Quotient Team <quotient@example.com>
 Pre-Depends: curl, wget, ca-certificates, gnupg
@@ -9,11 +9,11 @@ Depends: bash, systemd, curl, jq, samba,
          net-tools, dnsutils, openssl,
          golang-go
 Recommends: snapd
-Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.92_amd64.deb
-Size: 62514
-MD5sum: b8e53ca13d75a33a2e4551580c8ee085
-SHA1: 6f90d3ec4f1c9ae39739a56a56b993150165739b
-SHA256: d1dfc914fb64463c41cc06f491d0f711589afc1bf22f64f51ba90051cac8ebe6
+Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.93_amd64.deb
+Size: 62498
+MD5sum: e0eaeb03884b98827fe0f78ee8cb8137
+SHA1: a8c92750aae13dda6edf501a1b350c3b460c7d3d
+SHA256: 796189bd1ddbae045704d64cd8f673d180baeb8c9002d7b20c8f78971b9656c3
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

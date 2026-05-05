@@ -8,35 +8,35 @@ Codename: stable
 Architectures: amd64 all
 Components: main
 Description: Quotient server automation tools
-Date: Fri, 24 Apr 2026 15:26:04 UTC
+Date: Tue, 05 May 2026 20:27:56 UTC
 MD5Sum:
- 50467aff2b700d7d97cfb4f63993e288 907 main/binary-all/Packages
- 7073b9209c07033cf5b820c1b3a1ccb9 586 main/binary-all/Packages.gz
- 50467aff2b700d7d97cfb4f63993e288 907 main/binary-amd64/Packages
- 7073b9209c07033cf5b820c1b3a1ccb9 586 main/binary-amd64/Packages.gz
+ 5e2bbe7527569065c5c53e39d21bcc55 909 main/binary-all/Packages
+ 507e6a271650943da5d8b06fd08885c5 584 main/binary-all/Packages.gz
+ 5e2bbe7527569065c5c53e39d21bcc55 909 main/binary-amd64/Packages
+ 507e6a271650943da5d8b06fd08885c5 584 main/binary-amd64/Packages.gz
 SHA1:
- 6f25d2e27061a9b29cff74ebc5c82e630a64276a 907 main/binary-all/Packages
- 7daa01f1f26e4d8b0599f0631868d2784dd7eef9 586 main/binary-all/Packages.gz
- 6f25d2e27061a9b29cff74ebc5c82e630a64276a 907 main/binary-amd64/Packages
- 7daa01f1f26e4d8b0599f0631868d2784dd7eef9 586 main/binary-amd64/Packages.gz
+ e12f9bbcc6c81c65d538240bb3ee358cef4295ba 909 main/binary-all/Packages
+ b2ee28fcf3338641e30eea812bec2c9b31b78166 584 main/binary-all/Packages.gz
+ e12f9bbcc6c81c65d538240bb3ee358cef4295ba 909 main/binary-amd64/Packages
+ b2ee28fcf3338641e30eea812bec2c9b31b78166 584 main/binary-amd64/Packages.gz
 SHA256:
- c220d811b3554132a551814b8d9b2b840c9e00fe1f050b9ede3c8acc984b227f 907 main/binary-all/Packages
- 3d12d4db1d90d3e7660f5ef7911d951310f724229e777261996f551fe9eb114f 586 main/binary-all/Packages.gz
- c220d811b3554132a551814b8d9b2b840c9e00fe1f050b9ede3c8acc984b227f 907 main/binary-amd64/Packages
- 3d12d4db1d90d3e7660f5ef7911d951310f724229e777261996f551fe9eb114f 586 main/binary-amd64/Packages.gz
+ ae660c52d2761a106a0e542f96021467ff7d478501705c93bd2d78f1f6afabf7 909 main/binary-all/Packages
+ c646d0134e5d523d29f8992ab12d5afd963af00dc222ac1c4c7c7019896a3af1 584 main/binary-all/Packages.gz
+ ae660c52d2761a106a0e542f96021467ff7d478501705c93bd2d78f1f6afabf7 909 main/binary-amd64/Packages
+ c646d0134e5d523d29f8992ab12d5afd963af00dc222ac1c4c7c7019896a3af1 584 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEElbIxTnIMDIG4GDug8xTPXSnYZ14FAmnri4wACgkQ8xTPXSnY
-Z16hDQ/7BKXBFq0V3rvNIUakUtt5fDe0FDoIcgbeuGDPLEWYTHp4P/ZKxGTaEpcz
-vwQLXiIhDGGRFLK0rtDR5enZFpxHzQ82t+AbicKwBf2GVkeFy7RcVI7m6P2N46Qo
-JwxzTlhTj2+p7mirLpyaA7FUvptngAynDogVY5WXkcGS5COHGeXqa653Q8T+A9kF
-PnndI8q1x2gHJSVS+k2Die1Lhgi2s3QJVbEP3lo8Xge9PnvmUtQqJHXxZeb9yO2Y
-gbrWzq8nuCexP1SqfYEP1d/DzLEgZ/HvgY14qFEY+2kEyavA3qmccoxKAXb/IXhx
-cWPhpWzlA/D4nfmnvuLYkQJL/o+kBQX2c8ceD65O3FN4QTKGGpxxKTIJLlAGbxKG
-f9DYkk5iQej8aaXPVuOghBD9tBhZxqBDIDoNiVsaxNbJA/JKf3V/WMwtz5pi9eCC
-3l7WSi3yuAL46gA3vp54bt8b07MBLkXj5TEbkFmt6YU9CBRJ9LDGr8gxNopilhc5
-b8mX3ZvT9NxVFdhQWjSP+M6+0GDWgfbdcBCJhf63SMV7jwjUdCS9WS44ajx4DobB
-kfCNDo4K7Ti80NPSo4+bGI0dZ1j0bF+PwBamyp2pX2NYd/DhyuBLt1JyEgLl1LhH
-mW5hc79kilhaWiXrYdGwze6Sn5AzI/f1afVPs3nuE/OErbpBWqM=
-=l6Ut
+iQIzBAEBCgAdFiEElbIxTnIMDIG4GDug8xTPXSnYZ14FAmn6UswACgkQ8xTPXSnY
+Z141fA//Ui4BUncgE6i1zaGdjMw4UpHQHaFMwHUeNubVQu2jbUGsuMQ4Z8MfY6Tn
+EWRp3D/Zdo5MmaRt2LPCQlT09si+/O/n7Vhksm3EBo8oCtqtATNjg//6b/mt9J5S
+d1UmxcnJFNLS03FK/mzQr2vH8BbwCStR1DPbIRtJYnFzZoBy4s6PWjd+WdTAWYpL
+7MI1JErgs3aedy0TK0oDhqn4brc56+pUbS0apmb5z/Pr+YSvzwtnADpz6b7JyIku
+XA2fLl7tZZvTrZNJ5U8S2YPe77k9ctIJYnFuxgarg/QNVRyjS1ACX6s5rwXlZ1ry
+EjbNOQu+wHYW4Q42QYOO6x8CZJyX+15kFEpP9gPXpEB4CvFcctpKW65nPN7MgwSF
+A4DMZVf+l+vUgagzTKkMD6uM0wPaYigtOv7MOPjikIeEw1Y10iCrdwOv8XstZmMg
+WZ7NVDXmo8L8ooUc/mssK5Lpo0flip0XnQ7Eg2uMYY78FQueVN3HDl3bYVnbvkKs
+lEuD03eU7sO6zY7FGzl0f1BoqkZ3Xjc6MzCTsvqyQwdFtzxwCXJTXBgB9OnG40N6
+mkwLe2zaU6BflbRK0WgruE7+oO0UyVN0G8cLCj2u/sjp+PJ1hzyba/EXroHr7+mw
+aD9lisZ8XAYdyCZOkx6SxHP8ofCQpM6wybSxS+8RucM0bcQyTuM=
+=YTa7
 -----END PGP SIGNATURE-----

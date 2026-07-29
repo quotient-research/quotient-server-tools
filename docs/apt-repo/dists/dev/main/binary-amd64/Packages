@@ -11,9 +11,9 @@ Depends: bash, systemd, curl, jq, samba,
 Recommends: snapd
 Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.157_amd64.deb
 Size: 71630
-MD5sum: 86198d87f386e10bf5a9e1d46260e76b
-SHA1: fb2745c78ec44703c588bb9d1ad340cc0eb22cbc
-SHA256: 8a83bd3f541d01dd35fedc28168543104ab71c7f3708666a62de72a7119565a4
+MD5sum: 508b45279f6729e02e5123ae114faea7
+SHA1: 4e6f425547f5598a5abdeaac209a08ac7ac03fd9
+SHA256: 8154b8e5b027cdfb0c04628029c06fd5f26a9ad8492424e084aa9add9a0f9e4b
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

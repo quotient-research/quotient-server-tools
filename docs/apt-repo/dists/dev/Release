@@ -5,19 +5,19 @@ Codename: dev
 Architectures: amd64 all
 Components: main
 Description: Quotient server tools - development channel (bleeding edge)
-Date: Tue, 04 Aug 2026 21:09:44 UTC
+Date: Tue, 04 Aug 2026 22:02:33 UTC
 MD5Sum:
- 02f3190c14473f2c12f33dda1bf86255 913 main/binary-all/Packages
- 83b069a473d523130cd183555966c222 589 main/binary-all/Packages.gz
- 02f3190c14473f2c12f33dda1bf86255 913 main/binary-amd64/Packages
- 83b069a473d523130cd183555966c222 589 main/binary-amd64/Packages.gz
+ 4de907c0ec2faf5e7381ccb94172f855 913 main/binary-all/Packages
+ 10d472aeaeb6b33675381e5335d76f14 588 main/binary-all/Packages.gz
+ 4de907c0ec2faf5e7381ccb94172f855 913 main/binary-amd64/Packages
+ 10d472aeaeb6b33675381e5335d76f14 588 main/binary-amd64/Packages.gz
 SHA1:
- be3b7c29a53f67a477796119deaac6d7d7be6f86 913 main/binary-all/Packages
- eb7dfe7741b7ed9d7823b6f3fd64c93386833822 589 main/binary-all/Packages.gz
- be3b7c29a53f67a477796119deaac6d7d7be6f86 913 main/binary-amd64/Packages
- eb7dfe7741b7ed9d7823b6f3fd64c93386833822 589 main/binary-amd64/Packages.gz
+ e999121df6bc9d685e89d2eca2e6079cfdbb425f 913 main/binary-all/Packages
+ 8f7f2e9a02ef7a07ccb7bb6c4eae58f6f8d07b21 588 main/binary-all/Packages.gz
+ e999121df6bc9d685e89d2eca2e6079cfdbb425f 913 main/binary-amd64/Packages
+ 8f7f2e9a02ef7a07ccb7bb6c4eae58f6f8d07b21 588 main/binary-amd64/Packages.gz
 SHA256:
- 8ee95297cb5bd8f2cb154a83832654b2fd1c6f46a354b0698a3bcd207eeccea5 913 main/binary-all/Packages
- 623d8811af157f37d1540e380683f48cfdd6703eb11214ccaaddc1306eeaaccb 589 main/binary-all/Packages.gz
- 8ee95297cb5bd8f2cb154a83832654b2fd1c6f46a354b0698a3bcd207eeccea5 913 main/binary-amd64/Packages
- 623d8811af157f37d1540e380683f48cfdd6703eb11214ccaaddc1306eeaaccb 589 main/binary-amd64/Packages.gz
+ d699262a7a050cd3802de1cd979517faba47c068f1e1fb8c11328e5797c08da9 913 main/binary-all/Packages
+ 6738da92bf57114e16fcefceafccc6d5f0f0672cca6da40df65f7e86ebfe47f6 588 main/binary-all/Packages.gz
+ d699262a7a050cd3802de1cd979517faba47c068f1e1fb8c11328e5797c08da9 913 main/binary-amd64/Packages
+ 6738da92bf57114e16fcefceafccc6d5f0f0672cca6da40df65f7e86ebfe47f6 588 main/binary-amd64/Packages.gz

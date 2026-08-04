@@ -10,10 +10,10 @@ Depends: bash, systemd, curl, jq, samba,
          golang-go
 Recommends: snapd
 Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.179_amd64.deb
-Size: 72224
-MD5sum: e6711c21875a8635b7b698e3d2ba580f
-SHA1: 9c4d1b44a3b822f1b6fb0f3605845b9e95a4724c
-SHA256: b132a2d891e00d01dcdeada718d8410e9b649db68ea55f58caf1ff020c07da71
+Size: 72220
+MD5sum: f719482d6db4fd8a3d7f7e1f3adc21c2
+SHA1: dc1aec68a0cb7e407c7ec0fba0ad5b32df6aedb7
+SHA256: 3ffc349c4152820e7e2fae2e1bd06789d7c13c6d2e28bf607e64845cd32e7661
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

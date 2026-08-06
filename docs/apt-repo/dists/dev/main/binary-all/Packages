@@ -1,5 +1,5 @@
 Package: quotient-server-tools
-Version: 1.199
+Version: 1.200
 Architecture: all
 Maintainer: Quotient Team <quotient@example.com>
 Pre-Depends: curl, wget, ca-certificates, gnupg
@@ -9,15 +9,16 @@ Depends: bash, systemd, curl, jq, samba,
          net-tools, dnsutils, openssl,
          golang-go
 Recommends: snapd
-Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.199_amd64.deb
-Size: 72376
-MD5sum: 6022705bf174fc46c0c302d4a2d2828e
-SHA1: 990a6538e54d51a8a64521a4e5da04868947fcbb
-SHA256: 97fcf799b8b799e6a545b1a3c8cccb5ea30dfe6ca4c5c934c760777a8dab4fe4
+Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.200_amd64.deb
+Size: 85614
+MD5sum: 8cd8be36f56fd00ad9253ff68f78ed97
+SHA1: b52a5eb142a1e4104970b7846dfea936fa11cec1
+SHA256: d2df4341200f4cff7f12fdff3f16118ae190a0e682ec2ec57858caeaa00a7569
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts
  Converts an Ubuntu PC into a Quotient Mainframe. Includes first-boot
  configuration, Kubernetes manifest management, system monitoring agent,
- auto-update timer, Samba file sharing, and mDNS service discovery.
+ auto-update timer, Samba file sharing, mDNS service discovery, and the
+ quotient diagnostics CLI (doctor/status/logs/support-bundle).
 

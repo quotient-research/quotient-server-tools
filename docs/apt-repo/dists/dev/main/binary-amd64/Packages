@@ -1,5 +1,5 @@
 Package: quotient-server-tools
-Version: 1.286
+Version: 1.287
 Architecture: all
 Maintainer: Quotient Team <quotient@example.com>
 Pre-Depends: curl, wget, ca-certificates, gnupg
@@ -8,11 +8,11 @@ Depends: bash, systemd, curl, jq, samba,
          openssh-server, ufw, make,
          net-tools, dnsutils, openssl,
          golang-go, snapd
-Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.286_amd64.deb
-Size: 96640
-MD5sum: 36f7f43a9a935bd0a96eb184924d75d6
-SHA1: 4618449d99d3f7df74d14e13080d629c01690a76
-SHA256: 325b819174f8f985048d02b0dd803cbd00d3af665b428f673529956cf1a6f138
+Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.287_amd64.deb
+Size: 96666
+MD5sum: 577eed48dbf14a862440812b61305528
+SHA1: 9598bd7304447fe0844c5855b223253612b4e216
+SHA256: c79641a3b2c97750361a27b034c7332d21773bbad5c1887ad91881212a798a71
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

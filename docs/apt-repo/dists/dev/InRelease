@@ -8,35 +8,35 @@ Codename: dev
 Architectures: amd64
 Components: main
 Description: Quotient server tools - development channel (bleeding edge)
-Date: Tue, 13 Oct 2026 15:15:00 UTC
+Date: Tue, 13 Oct 2026 22:47:57 UTC
 MD5Sum:
  48b08c43b627865e40d3606d7d3fe2d7 953 main/binary-all/Packages
  da93369755c936c40af4e37320a0a6ae 620 main/binary-all/Packages.gz
- 437722427189e83d89e2b515c25e7b24 863 main/binary-amd64/Packages
- f9cc6378d490f4c8c0e7fadaf7cf1e07 580 main/binary-amd64/Packages.gz
+ 08091cba13c94d66e89f2fad09118d5a 863 main/binary-amd64/Packages
+ 15356b337d9fc792a18e8b159f24c7be 581 main/binary-amd64/Packages.gz
 SHA1:
  d0c5660c948f0544c76a0c99a4681d86e2fd3793 953 main/binary-all/Packages
  a1cac8aa249152bd7a4105655540e9940f63d599 620 main/binary-all/Packages.gz
- a272dbecc1d7387f7be75b1e07839ff3cf801e95 863 main/binary-amd64/Packages
- efe932d1c08b478a986ae5618da87a6fb07b96dd 580 main/binary-amd64/Packages.gz
+ 660f024617d2722c60c85a37eb54ebe4daf4e097 863 main/binary-amd64/Packages
+ eda2f532aa0d06dd2b8ec2fcb4f56c513765de93 581 main/binary-amd64/Packages.gz
 SHA256:
  194020af92bed2dedc2d1308bbc4d3feaf1ac11c189ac8310b5b5bd403ae28c9 953 main/binary-all/Packages
  139d3b4a1c3d86926a8d74ae3383fd938314bd6332e862b26fa093440bb59106 620 main/binary-all/Packages.gz
- 158a14edb19136ebba75d8c644e37f3e24c019270bad56911d2eceb11ffa641a 863 main/binary-amd64/Packages
- 7a4113aedf10721b76ead688d91a2f7b93bf656538a8b80ebba141887b3b9197 580 main/binary-amd64/Packages.gz
+ 571ba9e24ed1583cc87252551768fca3b91cf6ff3aff135bc684cb5ed6ee6980 863 main/binary-amd64/Packages
+ cb8c3ccd9c5c609d3df6ab35127bb75305cf0c6aaccaa9cf91a6d17ab64edab8 581 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEElbIxTnIMDIG4GDug8xTPXSnYZ14FAmrOSvQACgkQ8xTPXSnY
-Z16irg/+I4veTJAy6/FI/Gd6gX9NBoErqR3qbgZCf07m4ZbuaBAA2rM5zcWRUK7x
-0j1vC5GUFBVf/IgEC8QD4MrNtDNUOboBRN0Ez/G8ZlzkhrjY5/9a/6bJopKNCMjN
-NMvw6QyHoxid8OkXmoU1Ry2srVbU5611vnIuzwb7ZOedsKk3CgVO52bOGNKQXiLW
-fZcDnAedA6Bxgzj4cEiVR3PgzwdronF3rzbSgw/qiKMBu9XAdKTrteTaNZwRbfP+
-S2n8vwX20JNhPpcEir010ajqaDwb171ydV9/6a1zBk4fJRmTRZ8f4nsD59boc9RK
-3oxSudrfZbM53D47oXQekQXM0kWDxV0ObHpl9G5qw+TGr6LGm8fh0J8wBEGNDOFY
-wRR24tJJeKqCwAqzQ/k++YVSrjbVxxH7hXd8NBTP1hxtcAyeJ1Swq79y+timLUPU
-qZFCGJnAeaM1svBvQcib6gCdrYAhSBuMa2LRDIyuOHSXkaRcv5Vqwvcf0TdI95jp
-+cTr7YiijcwzG9xZLqSr0L0C6vWwcKYyaDnSGgj8noAsrd9/jUBN7ZplkYNDoXNB
-Ql9aQFw3MiLTzPJRmeoSH/tnW+rsjmc8ffUi798dshML6WJAAwjFmBCKNXVJnHiH
-CPv7GStcZEhQKNbuLUWcBOc8Jhu+rZQQogvs/z2BSkhwiGJ/KJ8=
-=hwm9
+iQIzBAEBCgAdFiEElbIxTnIMDIG4GDug8xTPXSnYZ14FAmrOtR0ACgkQ8xTPXSnY
+Z140hw//SdHk9x0RfGJht5S0VBP/+F6I1EfrOpsgeEPlwwXQGLb/gLWjc9zNs5qP
+/Y+5CPruux/0xTAxI5fpJBEAXjoZp9bx6hOMoqImEby/Ei0u1MtG3lkUYhNVlSZV
+iwKnm8lT5Hj38pjQJ0rDJTKvFktIcQkQkJElOEASCX5uANMm4wKmZsgwLI+X2bUI
+9SYDAgENE00apj4fSjdNCMb7ovi83qdV/6VN0fzPWBcIY/a1J9kMlVoW89U39Zu7
+0BYbtcrpmFUQrdYuQEJIxRJjItsA3HTPvwb2/iO+YB5EbC7InNVa7GhIzos4lAjs
+xesAVqeOTlCQpZ1Qt8InUXe1ymFRiMw8DcvKmNVQqeITqtalsK1nMUGP3y3kNvpb
+LffDFrxXLe4nSmDG7iN4cXfKksQzO9Cvla9P8RBanlCmTj0/bwdo1sMJo8xpjOj1
+3gvYglrtfkIvwYjRRpx+UnWMKutF3PNvtP7m6O6WC7K+y9MrrROcPd/L8i0ZNne/
+hqpm0nIZmmlzCayCVzmjXmmpzpXRpITl7BzegXnBWZWJCkLrubLMv6BLzVWyR099
+L5nP+DL6oEs3Q4q6aGT0bChEDEcPkWWpMUi6GWsma0LVVOlsAozwCM8O5ob7Cg6e
+3a+g/wuiIbwze0k/vZQiPHuCZy/+2IgV33U36YbrAQes39DwPX8=
+=AKaX
 -----END PGP SIGNATURE-----

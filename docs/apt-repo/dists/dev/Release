@@ -5,19 +5,19 @@ Codename: dev
 Architectures: amd64
 Components: main
 Description: Quotient server tools - development channel (bleeding edge)
-Date: Wed, 14 Oct 2026 04:43:12 UTC
+Date: Wed, 14 Oct 2026 06:40:35 UTC
 MD5Sum:
  48b08c43b627865e40d3606d7d3fe2d7 953 main/binary-all/Packages
  da93369755c936c40af4e37320a0a6ae 620 main/binary-all/Packages.gz
- f11accc513a5692e03a77bfce0ded436 863 main/binary-amd64/Packages
- 9441a469db556b29fb238032fa36c820 580 main/binary-amd64/Packages.gz
+ 272be731d429139ff7d9421abf2ca9c8 863 main/binary-amd64/Packages
+ 95fea58ee480963e516c05979af36700 581 main/binary-amd64/Packages.gz
 SHA1:
  d0c5660c948f0544c76a0c99a4681d86e2fd3793 953 main/binary-all/Packages
  a1cac8aa249152bd7a4105655540e9940f63d599 620 main/binary-all/Packages.gz
- 549fb730e50452f97faeb73569465b6e7c36a684 863 main/binary-amd64/Packages
- 3d1ed93153a86e29e7c6d0e3256abc7686ab8b57 580 main/binary-amd64/Packages.gz
+ 92a3ec8da85bff710169fe525c572f80f65bf564 863 main/binary-amd64/Packages
+ 5dc3e434e96769d4fc474fa574330407356a06bb 581 main/binary-amd64/Packages.gz
 SHA256:
  194020af92bed2dedc2d1308bbc4d3feaf1ac11c189ac8310b5b5bd403ae28c9 953 main/binary-all/Packages
  139d3b4a1c3d86926a8d74ae3383fd938314bd6332e862b26fa093440bb59106 620 main/binary-all/Packages.gz
- 184da35e1c08e4b0fe4f77cf2c07c216dc28e27da5c118b72ced835d9994db8d 863 main/binary-amd64/Packages
- 1290a017a58b0e71d98d272883b263b23d7f3a838adf470eb198ee331fab90a2 580 main/binary-amd64/Packages.gz
+ 46374e1a9692ae4305158c8f45c0f21efc1f9b1e17e02fc7aa961e78af38372f 863 main/binary-amd64/Packages
+ 7a69439326fff9e202444096b6df74eec7c0b4ff6422e8eabb6e70238a331248 581 main/binary-amd64/Packages.gz

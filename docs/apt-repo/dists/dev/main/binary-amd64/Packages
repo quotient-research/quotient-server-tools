@@ -1,15 +1,15 @@
 Package: quotient-server-tools
-Version: 1.343
+Version: 1.344
 Architecture: amd64
 Maintainer: Quotient Team <quotient@example.com>
 Depends: bash, systemd, curl, ca-certificates, jq,
          iproute2, psmisc, openssl,
          avahi-daemon, snapd
-Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.343_amd64.deb
-Size: 3352384
-MD5sum: 037b946674da59e1ebdfda5db759dcc8
-SHA1: de90c2b8265c6e23873979816e904442894c37e4
-SHA256: c1ba0e25dd9de45d354fccb3e3138ccb62ec44c0a4a33047ef2a716d18baef5b
+Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.344_amd64.deb
+Size: 3352774
+MD5sum: 827619ac058a9b0e4e6d93cf422899f4
+SHA1: 54dc753948dcfe71e7f3372afd3d7e69b49dbd77
+SHA256: 835b2b5ea76c4e451bbb39f42305f59d99b4319664fe85aac3a9a664c47edc52
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

@@ -6,10 +6,10 @@ Depends: bash, systemd, curl, ca-certificates, jq,
          iproute2, psmisc, openssl,
          avahi-daemon, snapd
 Filename: pool/dev/main/q/quotient-server-tools/quotient-server-tools_1.346_amd64.deb
-Size: 3355706
-MD5sum: 83a5093a7c76d6a8b63cf09a9561521a
-SHA1: db4e49766528896cfbf99ce4d7a051c81dbcf8df
-SHA256: d57f663027ea09cf64273ef1335e2c884dabc20654b5e6c5a4e7dd049f6d8a61
+Size: 3355666
+MD5sum: eefc1d2766f3e3c2f545d7ce49b3ec46
+SHA1: 2329033842878b99578fd52b84dd1ae1453f49ea
+SHA256: e9357c48ced063ce963a051c030c5b28d8945bc7e2563c1192a5bb63b4aeb025
 Section: admin
 Priority: optional
 Description: Quotient server automation tools and scripts

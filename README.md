@@ -14,6 +14,17 @@ Product tracking: [ecosystem#86](https://github.com/quotient-research/ecosystem/
 
 - `packages/` - Built .deb package files
 - `docs/apt-repo/` - APT repository (served via GitHub Pages)
+- `channels.json` - The version each APT channel (`dev`, `preview`, `stable`) carries
+
+## Releases
+
+Every package version is a [GitHub Release](https://github.com/quotient-research/quotient-server-tools/releases). Each one has the `.deb`, `bootstrap-repo.sh` and `SHA256SUMS`. Dev builds are prereleases. The **latest** release is always the current stable version, so this URL serves the stable bootstrap script:
+
+```
+https://github.com/quotient-research/quotient-server-tools/releases/latest/download/bootstrap-repo.sh
+```
+
+A published version never changes. Mainframes install from the signed APT repository below, which checks every package for them. To check a manual download, use `sha256sum -c SHA256SUMS`. CI creates and promotes releases ([ecosystem#273](https://github.com/quotient-research/ecosystem/issues/273), step 5c).
 
 ## Usage
 

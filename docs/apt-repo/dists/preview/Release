@@ -5,19 +5,19 @@ Codename: preview
 Architectures: amd64
 Components: main
 Description: Quotient server tools - preview channel (pre-release)
-Date: Mon, 23 Nov 2026 21:54:36 UTC
+Date: Tue, 24 Nov 2026 21:30:35 UTC
 MD5Sum:
  0146dbe4e8eb559d7d00299d3eae7cf6 973 main/binary-all/Packages
  f3be2523c0c25617ce5e840f23ad5311 630 main/binary-all/Packages.gz
- faeca2d9d5e84565c2db98085fec7985 866 main/binary-amd64/Packages
- 825e608f4784894353dc4e412f0f8aa6 581 main/binary-amd64/Packages.gz
+ c208484e4678539c83db8928b5ad836b 866 main/binary-amd64/Packages
+ c8fdb08fbfff022b724aadb327f5d025 581 main/binary-amd64/Packages.gz
 SHA1:
  cf696fb9ec7ecd62d5d0ce8c9bf4bb6fef8b09bb 973 main/binary-all/Packages
  01c85dd4aaf3f6b3dba1b7ea862ed23a8401b143 630 main/binary-all/Packages.gz
- 6d6fcfd5e3acf2f9b81b25a27f4ed1b6b8cea02f 866 main/binary-amd64/Packages
- dc73a7f831820795dc0845d2001e51f8fd15aeea 581 main/binary-amd64/Packages.gz
+ 514eaae4763f2492f43cf17dc0c6b4fdb382cde1 866 main/binary-amd64/Packages
+ 6b017750dc8aaa3f842c4133630a8a7647fba7a5 581 main/binary-amd64/Packages.gz
 SHA256:
  4c6d12a50e8a0e921fbc95abd0f0edc49278a1ce4a434ed081df25014d635913 973 main/binary-all/Packages
  71b668566c1fe0489898fbc9aedebcc9ff4ee116e13fb8f117f036c3d0edcdc3 630 main/binary-all/Packages.gz
- 7387a0d7169b3cf44445c5ae13dfbc48ee9a92e267d0a8e6dca2fe23cf052886 866 main/binary-amd64/Packages
- 03b4914a6a73f998d109106812d2ed0c79faeb4f19500f978e5ab3bb4abe13a3 581 main/binary-amd64/Packages.gz
+ 0ae173f90f6c853476c4090143141d1524460e0cf48e1042e23e8b5f9c6fdc6e 866 main/binary-amd64/Packages
+ c3b90d8c1ef90f14cf91a87ca036e518f6a1f6ecbb506368a84d195bb0be2c4b 581 main/binary-amd64/Packages.gz
